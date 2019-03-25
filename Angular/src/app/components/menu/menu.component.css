@@ -1,0 +1,11 @@
+button{
+    margin: 2px;
+}
+
+.stick-to-top {
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-color: rgb(43, 43, 43);
+    z-index: 1400;
+}

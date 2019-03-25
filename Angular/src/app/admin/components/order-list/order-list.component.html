@@ -1,0 +1,39 @@
+<app-admin-menu></app-admin-menu>
+<table class="table table-dark" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5">
+  <thead>
+      <tr>
+          <th style="width: 10%">
+              <mfDefaultSorter by="name">Full name</mfDefaultSorter>
+          </th>
+          <th style="width: 10%">
+              <mfDefaultSorter by="image">Model</mfDefaultSorter>
+          </th>
+          <th style="width: 10%">
+              <mfDefaultSorter by="status">Manufacturer</mfDefaultSorter>
+          </th>
+          <th style="width: 10%">
+              <mfDefaultSorter by="shedule">From date / To date</mfDefaultSorter>
+          </th>
+          <th style="width: 10%">
+            <mfDefaultSorter by="shedule">Total cost</mfDefaultSorter>
+        </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let order of mf.data">
+          <td>{{order.firstName}} {{order.lastName}}</td>
+          
+          <td>{{order.model}}</td>
+          <td>{{order.manufacturer}}</td>
+          <td>{{order.fromDate | date: mediumDate}} / {{order.toDate | date: mediumDate}}</td>
+          <td>{{order.totalCost}}</td>
+      </tr>
+  </tbody>
+  <tfoot>
+      <tr>
+          <td colspan="4">
+              <mfBootstrapPaginator class="text-primary" [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+          </td>
+      </tr>
+  </tfoot>
+</table> 

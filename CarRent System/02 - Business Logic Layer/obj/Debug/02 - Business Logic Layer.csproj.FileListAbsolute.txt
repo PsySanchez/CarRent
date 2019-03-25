@@ -1,0 +1,92 @@
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.csprojAssemblyReference.cache
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.csproj.CoreCompileInputs.cache
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\02 - Business Logic Layer.dll.config
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\02 - Business Logic Layer.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\02 - Business Logic Layer.pdb
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\CarRent.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\EntityFramework.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\EnvDTE.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\VSLangProj.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\EnvDTE80.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.15.0.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.Design.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.TextTemplating.Interfaces.11.0.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.TextTemplating.Interfaces.10.0.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\stdole.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.Framework.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Telemetry.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.RemoteControl.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Utilities.Internal.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.MSXML.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\CarRent.pdb
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\CarRent.dll.config
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\EntityFramework.xml
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.xml
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.xml
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.csproj.CopyComplete
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.dll
+C:\Users\alexv\OneDrive\Angular\CarRenting\CarRent\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.pdb
+C:\Users\alexv\Desktop\CarRent\CarRent System\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.csprojAssemblyReference.cache
+C:\Users\alexv\Desktop\CarRent\CarRent System\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.csproj.CoreCompileInputs.cache
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\02 - Business Logic Layer.dll.config
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\02 - Business Logic Layer.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\02 - Business Logic Layer.pdb
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\CarRent.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\EntityFramework.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\EnvDTE.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\VSLangProj.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\EnvDTE80.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.15.0.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.Design.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.TextTemplating.Interfaces.11.0.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.TextTemplating.Interfaces.10.0.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\stdole.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.Framework.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Telemetry.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.RemoteControl.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.VisualStudio.Utilities.Internal.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.MSXML.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\CarRent.pdb
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\CarRent.dll.config
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\EntityFramework.xml
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.xml
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\bin\Debug\Microsoft.AspNet.Scaffolding.12.0.xml
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.csprojAssemblyReference.cache
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.csproj.CoreCompileInputs.cache
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.csproj.CopyComplete
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.dll
+C:\Users\alexv\OneDrive\CarRent\CarRent System\02 - Business Logic Layer\obj\Debug\02 - Business Logic Layer.pdb

@@ -1,0 +1,25 @@
+<div class="d-flex justify-content-center">
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+            <img [src]="images[0]" alt="Random first slide" style="width:70%;height: 100%;">
+            <div class="carousel-caption">
+                <h3>15% discount</h3>
+                <p>for re-order</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <img [src]="images[1]" alt="Random second slide" style="width:70%;height: 100%;">
+            <div class="carousel-caption">
+                <h3>Delivery service</h3>
+                <p>Deliver and assemble the car yourself there conveniently.</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <img [src]="images[2]" alt="Random third slide" style="width:70%;height: 100%;">
+            <div class="carousel-caption">
+                <h3>Technical support</h3>
+                <p>Working 24/7</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+
+body{
+    background-image: url('../src/assets/images/carBack.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

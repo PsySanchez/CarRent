@@ -1,0 +1,38 @@
+<app-admin-menu></app-admin-menu>
+<table class="table table-dark" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5">
+  <thead>
+      <tr>
+          <th style="width: 10%">
+              <mfDefaultSorter by="name">Full name</mfDefaultSorter>
+          </th>
+          <th style="width: 10%">
+              <mfDefaultSorter by="image">Telephone</mfDefaultSorter>
+          </th>
+          <th style="width: 10%">
+              <mfDefaultSorter by="status">Email</mfDefaultSorter>
+          </th>
+          <th style="width: 10%">
+              <mfDefaultSorter by="shedule">Date of birth</mfDefaultSorter>
+          </th>
+          <th style="width: 10%">
+            <mfDefaultSorter by="shedule">User name</mfDefaultSorter>
+        </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let user of mf.data">
+          <td>{{user.firstName}} {{user.lastName}}</td>
+          <td>{{user.telephone}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.dateOfBirth | date: mediumDate}}</td>
+          <td>{{user.userName}}</td>
+      </tr>
+  </tbody>
+  <tfoot>
+      <tr>
+          <td colspan="4">
+              <mfBootstrapPaginator class="text-primary" [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+          </td>
+      </tr>
+  </tfoot>
+</table> 

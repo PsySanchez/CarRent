@@ -1,0 +1,24 @@
+<table class="table table-dark" *ngIf="userOrders">
+    <thead>
+      <tr>
+        <th scope="col">Photo</th>
+        <th scope="col">Model</th>
+        <th scope="col">Manufacturer</th>
+        <th scope="col">From date</th>
+        <th scope="col">Confirm order</th>
+        <th scope="col">Total cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of userOrders">
+        <td>
+            <img src="{{imagesFolder}}/{{order.photo}}" width="100" height="100">
+        </td>
+        <td>{{ order.model }}</td>
+        <td>{{ order.manufacturer }}</td>
+        <td>{{ order.fromDate | date : medium }}</td>
+        <td>{{ order.toDate  | date : medium }}</td>
+        <td>{{ order.totalCost }} $</td>
+      </tr>
+    </tbody>
+</table>

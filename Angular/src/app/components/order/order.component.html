@@ -1,0 +1,27 @@
+<table class="table table-dark" *ngIf="car">
+    <thead>
+      <tr>
+        <th scope="col">Photo</th>
+        <th scope="col">Model</th>
+        <th scope="col">Price</th>
+        <th>Manufacturer</th>
+        <th>From date</th>
+        <th>Confirm order</th>
+        <th>To date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <img src="{{imagesFolder}}/{{car.photo}}" width="100" height="100">
+        </td>
+        <td>{{car.model}}</td>
+        <td>{{car.pricePerDay}} $</td>
+        <td>{{car.manufacturer}}</td>
+        <td>{{ _fromDate.day }}/{{ _fromDate.month }}/{{ _fromDate.year }}</td>
+        <td><button type="button" class="btn btn-danger" (click)="confirmOrder()">Order</button></td>
+        <td>{{ _toDate.day }}/{{ _toDate.month }}/{{ _toDate.year }}
+        </td>
+      </tr>
+    </tbody>
+</table>

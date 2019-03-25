@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\alexv\\OneDrive\\Angular\\CarRenting\\CarRent\\03 - Web Api\\03 - Web Api.csproj",
+  "TargetFramework": "v4.6.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

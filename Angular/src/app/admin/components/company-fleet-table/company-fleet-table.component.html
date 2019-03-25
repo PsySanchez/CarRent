@@ -1,0 +1,64 @@
+<table class="table table-dark" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5">
+  <thead>
+    <tr>
+      <th style="width: 10%">
+        <mfDefaultSorter by="name">ID</mfDefaultSorter>
+      </th>
+      <th style="width: 10%">
+        <mfDefaultSorter by="image">Model id</mfDefaultSorter>
+      </th>
+      <th style="width: 10%">
+        <mfDefaultSorter by="status">Car number</mfDefaultSorter>
+      </th>
+      <th style="width: 10%">
+        <mfDefaultSorter by="shedule">Update/Delete</mfDefaultSorter>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let car of mf.data">
+      <td>{{car.id}}</td>
+      <td>{{car.modelId}}</td>
+      <td>{{car.carNumber}}</td>
+      <td>
+        <button type="button" class="m-1 btn btn-success btn-sm" (click)="update(car)">Update</button>
+        <button type="button" class="m-1 btn btn-danger btn-sm" (click)="remove(car.id)">Remove</button>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+
+    <tr>
+      <td colspan="4">
+        <mfBootstrapPaginator class="text-primary" [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+      </td>
+    </tr>
+  </tfoot>
+
+</table>
+<table class="table table-dark">
+  <tr>
+    <th style="width: 10%"> ID</th>
+    <th style="width: 10%"> Select model id</th>
+    <th style="width: 10%"> Car number</th>
+    <th style="width: 10%"> Add/Clear</th>
+  </tr>
+  <tr>
+    <td>ID set automatically</td>
+    <td>
+      <div class="form-group">
+        <select class="form-control-sm" [(ngModel)]="model">
+          <option>Select model</option>
+          <option *ngFor="let car of models">{{car.model}}</option>
+        </select>
+      </div>
+    </td>
+
+    <td><input id="typeahead-config" type="text" class="form-control-sm" [(ngModel)]="carNumber" /></td>
+
+    <td>
+      <button type="button" class="m-1 btn btn-success btn-sm" (click)="add()">Add</button>
+      <button type="button" class="m-1 btn btn-danger btn-sm" (click)="clear()">Clear</button>
+    </td>
+  </tr>
+</table>

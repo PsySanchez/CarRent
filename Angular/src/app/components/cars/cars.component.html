@@ -1,0 +1,57 @@
+<h3 class="text-light">Please select dates</h3>
+<app-ngbd-datepicker-range (fromDateSelected)="onFromDateSelected($event)" (toDateSelected)="onToDateSelected($event)">
+</app-ngbd-datepicker-range>
+<div class="container-fluid example-wrapper">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 example-col">
+            <p class="text-white">Category:</p>
+            <kendo-dropdownlist class="m-2"
+            [data]="dataManufacturer" 
+            [value]="selectedManufacturer" 
+            [defaultItem]="defaultItemManufacturers"
+            [textField]="'manufacturer'" 
+            [valueField]="'id'" 
+            (valueChange)="handleCategoryChange($event)">
+            </kendo-dropdownlist>
+        </div>
+        <div class="col-xs-12 col-sm-4 example-col">
+            <p class="text-white">Product:</p>
+            <kendo-dropdownlist class="m-2"
+            [disabled]="isDisabledModels" 
+            [defaultItem]="defaultItemModels"
+            [data]="dataResultCars" 
+            [value]="selectedModel" 
+            [textField]="'model'"
+            [valueField]="'id'" 
+            (valueChange)="handleProductChange($event)">
+            </kendo-dropdownlist>
+        </div>
+    </div>
+</div>
+
+
+<table [hidden]="!fromToDateSelected()" class="table table-dark" *ngIf="allCars">
+    <thead>
+        <tr>
+            <th scope="col">Manufacturer</th>
+            <th scope="col">Model</th>
+            <th scope="col">Price per day</th>
+            <th scope="col">photo</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let car of (allCars | modelFilter:model | manufacturerFilter:manufacturer)">
+
+            <td>{{car.manufacturer}}</td>
+            <td>{{car.model}}</td>
+            <td>{{car.pricePerDay}} $</td>
+            <td>
+                <img src="{{imagesFolder}}/{{car.photo}}" width="100" height="100">
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger" (click)="goToOrders(car.id)">Order</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

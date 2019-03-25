@@ -1,0 +1,82 @@
+ <div class="container text-light">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <h1 class="h3">Feel free to contact us</h1>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="well well-sm">
+                    <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group text-light">
+                                <label for="name">First name</label>
+                                <input type="text" class="form-control" name="firstName" [(ngModel)]="contactUsMessageModel.firstName" placeholder="first name" required="required" />
+                            </div>
+                            <div class="form-group text-light">
+                                    <label for="name">Last name</label>
+                                    <input type="text" class="form-control" name="lastName" [(ngModel)]="contactUsMessageModel.lastName" placeholder="last name" required="required" />
+                                </div>
+                            <div class="form-group text-light">
+                                <label for="email"> Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" name="email" [(ngModel)]="contactUsMessageModel.email" class="form-control"  placeholder="email" required="required" /></div>
+                            </div>
+                            <div class="form-group text-light">
+                                    <label for="name">Phone</label>
+                                    <input type="tel" class="form-control" name="phone" [(ngModel)]="contactUsMessageModel.phone" placeholder="phone" required="required" />
+                                </div>
+                            <div class="form-group text-light">
+                                <label for="subject">
+                                    Subject</label>
+                                <select name="subject" [(ngModel)]="contactUsMessageModel.subject" class="form-control" required="required">
+                                    <option value="na" selected="">Choose One:</option>
+                                    <option value="service">General Customer Service</option>
+                                    <option value="suggestions">Suggestions</option>
+                                    <option value="product">Technical support</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="text-light" for="name">
+                                    Message</label>
+                                <textarea  name="message" [(ngModel)]="contactUsMessageModel.message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                    placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs" (click)="send()">
+                                Send Message</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 text-info">
+                <form>
+                <legend><span class="glyphicon glyphicon-globe"></span>Feedback</legend>
+                <address>
+                    <strong>Alex Voronin</strong><br>
+                    <a target="_blank" rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/alex-voronin-16358b56/" >https://www.linkedin.com/</a><br>
+                    Full stack developer<br>
+                    Petach Toqua<br>
+                    <abbr title="Phone">
+                        Telephone:</abbr>
+                    (+972) 53-9225322
+                </address>
+                <address>
+                    <strong>Email</strong><br>
+                    <a href="mailto:#">alex.varonin@gmail.com</a>
+                </address>
+                </form>
+            </div>
+        </div>
+    </div>
+    

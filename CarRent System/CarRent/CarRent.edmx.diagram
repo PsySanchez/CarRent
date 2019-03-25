@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0a217e19bae649b6b266ff95d9cb37a3" Name="Diagram1" ZoomLevel="90">
+        <EntityTypeShape EntityType="CarRentModel.ContactUsMessage" Width="2.125" PointX="7.5" PointY="1.375" />
+        <EntityTypeShape EntityType="CarRentModel.CompanyFleet" Width="1.5" PointX="5.25" PointY="6.125" />
+        <EntityTypeShape EntityType="CarRentModel.ManufacturersCar" Width="1.5" PointX="0.75" PointY="6" />
+        <EntityTypeShape EntityType="CarRentModel.ModelsCar" Width="1.5" PointX="3" PointY="6" />
+        <AssociationConnector Association="CarRentModel.FK_CompanyFleet_ModelsCar" />
+        <AssociationConnector Association="CarRentModel.FK_ModelsCar_ManufacturersCar" />
+        <EntityTypeShape EntityType="CarRentModel.User" Width="1.5" PointX="3" PointY="2.25" />
+        <EntityTypeShape EntityType="CarRentModel.Car" Width="1.5" PointX="5.5" PointY="1.5" />
+        <EntityTypeShape EntityType="CarRentModel.Order" Width="1.5" PointX="7.5" PointY="4.875" />
+        <AssociationConnector Association="CarRentModel.FK_Orders_CompanyFleet" />
+        <AssociationConnector Association="CarRentModel.FK_Orders_Users" />
+        <EntityTypeShape EntityType="CarRentModel.UserOrder" Width="1.5" PointX="10.75" PointY="3.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

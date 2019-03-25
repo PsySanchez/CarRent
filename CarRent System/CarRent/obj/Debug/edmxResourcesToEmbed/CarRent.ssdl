@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarRentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CompanyFleet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ModelId" Type="int" Nullable="false" />
+    <Property Name="CarNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ContactUsMessage">
+    <Key>
+      <PropertyRef Name="ContactUsID" />
+    </Key>
+    <Property Name="ContactUsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Message" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Subject" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ManufacturersCar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManufacturerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ModelsCar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManufacturerId" Type="int" Nullable="false" />
+    <Property Name="Model" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PricePerDay" Type="money" Nullable="false" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="CarId" Type="int" Nullable="false" />
+    <Property Name="FromDate" Type="date" Nullable="false" />
+    <Property Name="ToDate" Type="date" Nullable="false" />
+    <Property Name="TotalCost" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telephone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="Role" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CarRent.dbo.Cars' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Cars">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CarNumber" />
+      <PropertyRef Name="Model" />
+      <PropertyRef Name="PricePerDay" />
+      <PropertyRef Name="Photo" />
+      <PropertyRef Name="ManufacturerName" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CarNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Model" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PricePerDay" Type="money" Nullable="false" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="ManufacturerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CarRent.dbo.UserOrders' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="UserOrders">
+    <Key>
+      <PropertyRef Name="LastName" />
+      <PropertyRef Name="FirstName" />
+      <PropertyRef Name="FromDate" />
+      <PropertyRef Name="ToDate" />
+      <PropertyRef Name="TotalCost" />
+      <PropertyRef Name="Photo" />
+      <PropertyRef Name="Model" />
+      <PropertyRef Name="ManufacturerName" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FromDate" Type="date" Nullable="false" />
+    <Property Name="ToDate" Type="date" Nullable="false" />
+    <Property Name="TotalCost" Type="money" Nullable="false" />
+    <Property Name="Photo" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Model" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ManufacturerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CompanyFleet_ModelsCar">
+    <End Role="ModelsCar" Type="Self.ModelsCar" Multiplicity="1" />
+    <End Role="CompanyFleet" Type="Self.CompanyFleet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ModelsCar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CompanyFleet">
+        <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ModelsCar_ManufacturersCar">
+    <End Role="ManufacturersCar" Type="Self.ManufacturersCar" Multiplicity="1" />
+    <End Role="ModelsCar" Type="Self.ModelsCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManufacturersCar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ModelsCar">
+        <PropertyRef Name="ManufacturerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_CompanyFleet">
+    <End Role="CompanyFleet" Type="Self.CompanyFleet" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CompanyFleet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="CarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CarRentModelStoreContainer">
+    <EntitySet Name="CompanyFleet" EntityType="Self.CompanyFleet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactUsMessage" EntityType="Self.ContactUsMessage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ManufacturersCar" EntityType="Self.ManufacturersCar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ModelsCar" EntityType="Self.ModelsCar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cars" EntityType="Self.Cars" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Cars].[Id] AS [Id], 
+    [Cars].[CarNumber] AS [CarNumber], 
+    [Cars].[Model] AS [Model], 
+    [Cars].[PricePerDay] AS [PricePerDay], 
+    [Cars].[Photo] AS [Photo], 
+    [Cars].[ManufacturerName] AS [ManufacturerName]
+    FROM [dbo].[Cars] AS [Cars]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UserOrders" EntityType="Self.UserOrders" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UserOrders].[LastName] AS [LastName], 
+    [UserOrders].[FirstName] AS [FirstName], 
+    [UserOrders].[FromDate] AS [FromDate], 
+    [UserOrders].[ToDate] AS [ToDate], 
+    [UserOrders].[TotalCost] AS [TotalCost], 
+    [UserOrders].[Photo] AS [Photo], 
+    [UserOrders].[Model] AS [Model], 
+    [UserOrders].[ManufacturerName] AS [ManufacturerName], 
+    [UserOrders].[UserId] AS [UserId]
+    FROM [dbo].[UserOrders] AS [UserOrders]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_CompanyFleet_ModelsCar" Association="Self.FK_CompanyFleet_ModelsCar">
+      <End Role="ModelsCar" EntitySet="ModelsCar" />
+      <End Role="CompanyFleet" EntitySet="CompanyFleet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ModelsCar_ManufacturersCar" Association="Self.FK_ModelsCar_ManufacturersCar">
+      <End Role="ManufacturersCar" EntitySet="ManufacturersCar" />
+      <End Role="ModelsCar" EntitySet="ModelsCar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_CompanyFleet" Association="Self.FK_Orders_CompanyFleet">
+      <End Role="CompanyFleet" EntitySet="CompanyFleet" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Users" Association="Self.FK_Orders_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
