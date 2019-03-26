@@ -4,7 +4,6 @@ import { NgbCalendar, NgbDateStruct, NgbDate, NgbDatepickerConfig } from '@ng-bo
 @Component({
   selector: 'app-datepicker-basic',
   templateUrl: './datepicker-basic.component.html',
-  styleUrls: ['./datepicker-basic.component.css']
 })
 export class DatepickerBaseComponent {
 

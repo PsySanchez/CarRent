@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute} from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 
@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
     loading = false;
     submitted = false;
     returnUrl: string;
+    message: any;
 
     constructor(
         private formBuilder: FormBuilder,
@@ -30,8 +31,8 @@ export class LoginComponent implements OnInit {
         this.authenticationService.logout();
         this.route.queryParams.subscribe(params => {
             this.returnUrl = params['returnUrl'];
+            console.log(this.returnUrl);
         });
-
     }
 
     // convenience getter for easy access to form fields
@@ -48,15 +49,14 @@ export class LoginComponent implements OnInit {
         this.loading = true;
         this.authenticationService.login(this.f.username.value, this.f.password.value)
             .pipe(first())
-            .subscribe(
-                data => {
-                    this.router.navigateByUrl(this.returnUrl);
-                    window.location.reload();
-                },
-
+            .subscribe(() => {
+                console.log(this.returnUrl);
+                this.router.navigateByUrl(this.returnUrl);
+            },
                 error => {
                     this.alertService.error(error);
                     this.loading = false;
+                    alert('User name or password is incorrect');
                 });
     }
 }

@@ -10,7 +10,6 @@ import { Model } from '../../models/model.model';
 @Component({
   selector: 'app-company-fleet-table',
   templateUrl: './company-fleet-table.component.html',
-  styleUrls: ['./company-fleet-table.component.css']
 })
 export class CompanyFleetTableComponent implements OnInit {
 

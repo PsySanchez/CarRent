@@ -30,7 +30,7 @@ export class OrderComponent implements OnInit {
         private route: ActivatedRoute,
         private orderService: OrderService,
         private alertService: AlertService,
-        private router: Router, ) { }
+        private router: Router) { }
 
 
     ngOnInit() {

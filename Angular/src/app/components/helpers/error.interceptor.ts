@@ -11,7 +11,6 @@ export class ErrorInterceptor implements HttpInterceptor {
     constructor(private authenticationService: AuthenticationService, private router: Router) {}
 
     // Intercepts HttpRequest or HttpResponse and handles them.
-    // https://angular.io/api/common/http/HttpInterceptor
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         return next.handle(request).pipe(catchError(err => {
             if (err.status === 401) {

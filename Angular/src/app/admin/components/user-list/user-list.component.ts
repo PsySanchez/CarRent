@@ -6,7 +6,6 @@ import { User } from 'src/app/models';
 @Component({
   selector: 'app-user-list',
   templateUrl: './user-list.component.html',
-  styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
 
@@ -33,8 +32,5 @@ export class UserListComponent implements OnInit {
     if (userName === undefined) {
       this.data = this.getData;
     }
-    // else {
-    //   this.data = this.getData.filter(c => c.username.toLowerCase().includes(userName.toLowerCase()));
-    // }
   }
 }
