@@ -18,6 +18,6 @@ export class CarouselConfigComponent {
     config.interval = 10000;
     config.wrap = true;
     config.keyboard = false;
-    config.pauseOnHover = false;
+    // config.pauseOnHover = false;
   }
 }

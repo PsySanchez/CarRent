@@ -1,10 +1,10 @@
-import { Component, OnInit, Input, ɵConsole } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CarsService } from 'src/app/services/cars.service';
 import { Router } from '@angular/router';
 import { Car } from '../../models/car';
 
 import { imagesFolder } from '../../../environments/environment.prod';
-import { NgbDate } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDate } from '@ng-bootstrap/ng-bootstrap/datepicker/ngb-date';
 import { CarModel } from 'src/app/models/carModel';
 import { CarManufacturer } from 'src/app/models/carManufacturer';
 

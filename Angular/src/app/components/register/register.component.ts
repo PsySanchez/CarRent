@@ -1,9 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 import { AlertService, UserService } from '../../services';
-import { NgbDate } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDate } from '@ng-bootstrap/ng-bootstrap/datepicker/ngb-date';
 
 @Component({
     selector: 'app-register',
@@ -25,13 +25,13 @@ export class RegisterComponent implements OnInit {
 
     ngOnInit() {
         this.registerForm = this.formBuilder.group({
-            email: ['', Validators],
+            email: ['', Validators.required],
             firstName: ['', Validators.required],
             lastName: ['', Validators.required],
             username: ['', Validators.required],
             password: ['', [Validators.required, Validators.minLength(6)]],
             telephone: ['', [Validators.required, Validators.minLength(6)]],
-            dateOfBirth: ['', Validators]
+            dateOfBirth: ['', Validators.required]
         });
     }
 
@@ -44,24 +44,21 @@ export class RegisterComponent implements OnInit {
     onSubmit() {
         this.submitted = true;
 
+        console.log(this.registerForm.value);
         // stop here if form is invalid
         if (this.registerForm.invalid) {
             return;
         }
-
         // Date of birth:
         const date = new Date(Date.UTC(this.selectedDate.year, this.selectedDate.month - 1, this.selectedDate.day));
         this.registerForm.controls['dateOfBirth'].setValue(date);
-
-
         this.loading = true;
         this.userService.register(this.registerForm.value)
             .pipe(first())
-            .subscribe(
-                data => {
-                    this.alertService.success('Registration successful', true);
-                    this.router.navigate(['/login']);
-                },
+            .subscribe(() => {
+                this.alertService.success('Registration successful', true);
+                this.router.navigate(['/login']);
+            },
                 error => {
                     this.alertService.error(error);
                     this.loading = false;

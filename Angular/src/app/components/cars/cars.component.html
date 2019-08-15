@@ -3,7 +3,8 @@
 </app-ngbd-datepicker-range>
 <div class="container-fluid example-wrapper">
     <div class="row">
-        <div class="col-xs-12 col-sm-4 example-col">
+        <div class="col-xs-12 col-sm-4 example-col"
+        [hidden]="!fromToDateSelected()">
             <p class="text-white">Category:</p>
             <kendo-dropdownlist class="m-2"
             [data]="dataManufacturer" 
@@ -14,7 +15,8 @@
             (valueChange)="handleCategoryChange($event)">
             </kendo-dropdownlist>
         </div>
-        <div class="col-xs-12 col-sm-4 example-col">
+        <div class="col-xs-12 col-sm-4 example-col"
+        [hidden]="!fromToDateSelected()">
             <p class="text-white">Product:</p>
             <kendo-dropdownlist class="m-2"
             [disabled]="isDisabledModels" 

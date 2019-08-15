@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { Car } from '../../models/car';
 
 import { imagesFolder } from '../../../environments/environment.prod';
-import { NgbDate } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDate } from '@ng-bootstrap/ng-bootstrap/datepicker/ngb-date';
 
 
 @Component({
