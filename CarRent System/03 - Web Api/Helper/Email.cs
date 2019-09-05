@@ -16,7 +16,7 @@ namespace CarRent
     /// <param name="body">Email body.</param>
     public static void Send(string subject, string body)
     {
-      Send("alex.voronin.project@gmail.com", subject, body);
+      Send("***@***.com", subject, body);
     }
 
     /// <summary>
