@@ -16,7 +16,7 @@ namespace CarRent
     /// <param name="body">Email body.</param>
     public static void Send(string subject, string body)
     {
-      Send("alex.voronin.project@gmail.com", subject, body);
+      Send("***@***.com", subject, body);
     }
 
     /// <summary>
@@ -39,7 +39,7 @@ namespace CarRent
     /// <param name="attachmentFileName">Attachment file name.</param>
     public static void Send(string toEmailAddress, string subject, string body, string attachmentFileName)
     {
-      using (MailMessage msg2Send = new MailMessage("alex.voronin.project@gmail.com", toEmailAddress))
+      using (MailMessage msg2Send = new MailMessage("***@***.com", toEmailAddress))
       {
         // Set subject and body:
         msg2Send.IsBodyHtml = true;
@@ -53,13 +53,13 @@ namespace CarRent
           msg2Send.Attachments.Add(new Attachment(attachmentFileName));
 
         // Set SMTP properties: 
-        SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+        SmtpClient smtpClient = new SmtpClient("smtp.***.com", ***);
         smtpClient.EnableSsl = true;
         smtpClient.Timeout = 60000;
         smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
 
         // Set credentials: 
-        smtpClient.Credentials = new NetworkCredential("alex.voronin.project@gmail.com", "Projetc2019");
+        smtpClient.Credentials = new NetworkCredential("***@***.com", "*******");
 
         // Send email:
         smtpClient.Send(msg2Send);
